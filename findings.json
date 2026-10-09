@@ -1,0 +1,68 @@
+{
+  "n_customers": 7000,
+  "overall_churn_rate_pct": 34.01,
+  "churn_by_contract_pct": {
+    "Month-to-month": 46.5,
+    "One year": 22.8,
+    "Two year": 15.3
+  },
+  "churn_by_internet_pct": {
+    "DSL": 26.0,
+    "Fiber optic": 46.2,
+    "No": 21.5
+  },
+  "churn_by_tenure_pct": {
+    "0-6 mo": 37.5,
+    "7-12 mo": 35.7,
+    "1-2 yr": 34.4,
+    "2+ yr": 27.9
+  },
+  "churn_by_payment_pct": {
+    "Bank transfer (automatic)": 30.5,
+    "Credit card (automatic)": 34.8,
+    "Electronic check": 36.5,
+    "Mailed check": 32.5
+  },
+  "avg_tenure_stayed": 18.4,
+  "avg_tenure_churned": 15.4,
+  "avg_bill_stayed": 55.52,
+  "avg_bill_churned": 65.39,
+  "pct_churners_no_tech_support": 75.2,
+  "pct_stayers_no_tech_support": 70.0,
+  "model": "RandomForestClassifier (200 trees, balanced class weights)",
+  "metrics": {
+    "accuracy": 0.68,
+    "precision": 0.5269,
+    "recall": 0.5756,
+    "f1": 0.5502,
+    "roc_auc": 0.7225
+  },
+  "top_features": {
+    "monthly_charges": 0.1928,
+    "total_charges": 0.1491,
+    "tenure_months": 0.1178,
+    "contract_Two year": 0.0817,
+    "contract_One year": 0.0448,
+    "internet_service_Fiber optic": 0.0382,
+    "gender_Male": 0.0273,
+    "multiple_lines_Yes": 0.0265,
+    "paperless_billing_Yes": 0.0259,
+    "partner_Yes": 0.0255,
+    "device_protection_Yes": 0.0243,
+    "streaming_movies_Yes": 0.0243,
+    "dependents_Yes": 0.0237,
+    "online_backup_Yes": 0.0235,
+    "streaming_tv_Yes": 0.0234
+  },
+  "n_high_risk_customers": 2657,
+  "confusion_matrix": [
+    [
+      678,
+      246
+    ],
+    [
+      202,
+      274
+    ]
+  ]
+}
